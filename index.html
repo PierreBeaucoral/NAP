@@ -2,285 +2,181 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="Development Climate Finance AI">
-  <meta property="og:title" content="AI development finance research"/>
-  <meta property="og:description" content="    This paper examines the relationship between changes in adaptation aid and the implementation of National Adaptation Plans (NAPs) in recipient countries, using a staggered difference-in-differences (DiD) framework. Adaptation aid, a critical component of climate finance, aims to bolster the resilience of vulnerable nations to climate change impacts. However, empirical evidence on its efficacy in driving policy implementation remains limited. Analyzing adaptation aid registered in the OECD CRS dataset and detailed information on NAP implementation stages across multiple recipient countries, we exploit temporal and cross-country variation in aid to identify signal effects of NAPs. The staggered DiD approach accounts for the heterogeneous timing of aid receipt and of NAP implementation, allowing us to isolate the effects of NAPs while addressing concerns of endogeneity and omitted variable bias. Our findings reveal that NAPs adoption tends to reduce received adaptation aid. These controversial results underscore the importance of recipient strategies and well-targeted aid in achieving global climate adaptation goals and provide critical insights for policymakers and donors seeking to enhance the effectiveness of climate finance mechanisms."/>
+  <meta property="og:title" content="No Plan, No Aid? - Research Communications"/>
+  <meta property="og:description" content="Exploring the impact of National Adaptation Plans on adaptation finance using advanced econometric methods."/>
   <meta property="og:url" content="https://pierrebeaucoral.github.io/"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:title" content="No Plan, No Aid? - Research Communications">
+  <meta name="twitter:description" content="How National Adaptation Plans (NAPs) shape adaptation aid flows and policy implications.">
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="AI, Development Finance, OECD">
+  <meta name="keywords" content="AI, Development Finance, Climate Adaptation, National Adaptation Plans, Research">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>No Plan, No Aid? Exploring the Impact of NAPs on Adaptation Finance</title>
+  <title>No Plan, No Aid? - Research Communications</title>
   <link rel="icon" type="image/x-icon" href="static/images/icon.png">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
 </head>
 <body>
 
-
-  <section class="hero">
+  <!-- Hero Section -->
+  <section class="hero is-primary is-bold">
     <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">No Plan, No Aid? Exploring the Impact of NAPs on Adaptation Finance</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://pierrebeaucoral.github.io/" target="_blank">By Pierre Beaucoral, Michaël Goujon, and Sébastien Marchand</a><sup>*</sup>,</span>
-                  </span>
-                  </div>
+      <div class="container has-text-centered">
+        <h1 class="title is-1">No Plan, No Aid?</h1>
+        <h2 class="subtitle is-3">Exploring the Impact of National Adaptation Plans on Adaptation Finance</h2>
+        <p class="is-size-5">By Pierre Beaucoral, Michaël Goujon, and Sébastien Marchand</p>
+        <div class="buttons is-centered">
+          <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank" class="button is-light is-medium">
+            <span class="icon"><i class="fas fa-file-pdf"></i></span>
+            <span>Download Full Paper</span>
+          </a>
+          <a href="static/pdfs/supplementary_material.pdf" target="_blank" class="button is-light is-medium">
+            <span class="icon"><i class="fas fa-file-pdf"></i></span>
+            <span>Supplementary Material</span>
+          </a>
+          <a href="https://github.com/PierreBeaucoral/ML-clustering-of-development-activities" target="_blank" class="button is-light is-medium">
+            <span class="icon"><i class="fab fa-github"></i></span>
+            <span>Source Code</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">UCA CNRS IRD CERDI<br>pierre.beaucoral@uca.fr</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+  <!-- Abstract Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Abstract</h2>
+      <div class="content">
+        <p>
+          This paper examines the relationship between adaptation aid and the implementation of National Adaptation Plans (NAPs) using a staggered difference-in-differences framework enhanced by Double Machine Learning techniques. Our findings reveal that while conventional estimates suggested a decline in aid post-NAP adoption, advanced methods uncover a significant positive effect—indicating that NAPs can signal improved institutional capacity and attract additional funding.
+        </p>
+      </div>
+    </div>
+  </section>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/PierreBeaucoral/ML-clustering-of-development-activities" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+  <!-- Key Findings Section -->
+  <section class="section has-background-light">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Key Findings</h2>
+      <div class="columns is-multiline">
+        <div class="column is-half">
+          <article class="message is-info">
+            <div class="message-header">
+              <p>Signal Effects</p>
             </div>
-          </div>
+            <div class="message-body">
+              NAP adoption signals both reduced vulnerability and enhanced capacity, influencing donor decisions.
+            </div>
+          </article>
+        </div>
+        <div class="column is-half">
+          <article class="message is-info">
+            <div class="message-header">
+              <p>Empirical Insight</p>
+            </div>
+            <div class="message-body">
+              Traditional DiD models indicated a decline in aid; however, refined DML estimates show a robust positive impact.
+            </div>
+          </article>
+        </div>
+        <div class="column is-half">
+          <article class="message is-info">
+            <div class="message-header">
+              <p>Donor Behavior</p>
+            </div>
+            <div class="message-body">
+              Donors may reallocate aid to countries not adopting NAPs, emphasizing the importance of strategic communication.
+            </div>
+          </article>
+        </div>
+        <div class="column is-half">
+          <article class="message is-info">
+            <div class="message-header">
+              <p>Policy Implications</p>
+            </div>
+            <div class="message-body">
+              Enhanced evaluation frameworks are needed to account for the dual signals sent by NAP adoption, promoting efficient climate finance allocation.
+            </div>
+          </article>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Teaser video-->
-
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-    This paper examines the relationship between changes in adaptation aid and the implementation of National Adaptation Plans (NAPs) in recipient countries, using a staggered difference-in-differences (DiD) framework. Adaptation aid, a critical component of climate finance, aims to bolster the resilience of vulnerable nations to climate change impacts. However, empirical evidence on its efficacy in driving policy implementation remains limited. Analyzing adaptation aid registered in the OECD CRS dataset and detailed information on NAP implementation stages across multiple recipient countries, we exploit temporal and cross-country variation in aid to identify signal effects of NAPs. The staggered DiD approach accounts for the heterogeneous timing of aid receipt and of NAP implementation, allowing us to isolate the effects of NAPs while addressing concerns of endogeneity and omitted variable bias. Our findings reveal that NAPs adoption tends to reduce received adaptation aid. These controversial results underscore the importance of recipient strategies and well-targeted aid in achieving global climate adaptation goals and provide critical insights for policymakers and donors seeking to enhance the effectiveness of climate finance mechanisms.        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
- <div class="container">
-        <h1>Understanding Climate Adaptation and National Adaptation Plans (NAPs)</h1>
-        <p>As climate change intensifies, developing countries rely on international adaptation aid to build resilience. National Adaptation Plans (NAPs) were introduced to help nations systematically integrate climate adaptation into their policies. However, our research finds a paradox: adopting a NAP may actually lead to a reduction in adaptation aid.</p>
-    </div>
-  
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
+  <!-- Detailed Results and Methodology Section -->
+  <section class="section">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/climate_finance_evolution.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Evolution of Climate Adaptation Flows.
-        </h2>
+      <h2 class="title is-3 has-text-centered">Research Results and Methodology</h2>
+      <div class="content">
+        <p>
+          Our analysis utilizes a staggered difference-in-differences approach to compare countries before and after NAP adoption, controlling for time-invariant and common factors. To address potential endogeneity and high-dimensional confounders, we employ a Double Machine Learning framework which leverages machine learning algorithms (e.g., LASSO, Gradient Boosting) to yield unbiased estimates.
+        </p>
+        <p>
+          The refined DML estimates reveal that NAP implementation is associated with a significant increase in adaptation aid, suggesting that the positive capacity signals outweigh the reduction in perceived vulnerability.
+        </p>
       </div>
-      <div class="item item-video1">
-            <!-- Your video file here -->
-        <iframe src="nap.html" style="width:100%; height: 800px; border: 0px;""></iframe>
-        <h2 class="subtitle has-text-centered">
-         National Adaptation Plans Adoptions.
-        </h2>
-      </div>
-      <div class="item item-video2">
-            <!-- Your video file here -->
-        <iframe src="received.html" style="width:100%; height: 800px; border: 0px;""></iframe>
-        <h2 class="subtitle has-text-centered">
-         Commitments for adaptation per country.
-        </h2>
-      </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
- <div class="container">
+    </div>
+  </section>
 
-        <h1>Key Findings: The NAP Aid Paradox</h1>
-        <p>Using a staggered difference-in-differences (DiD) approach, we analyzed OECD climate finance data and NAP adoption records. Surprisingly, countries that implement a NAP tend to receive less adaptation aid afterward.</p>
-        
-        <h2>Possible Explanations</h2>
+  <!-- Visual Results Section -->
+  <section class="section has-background-light">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Visualizing the Findings</h2>
+      <div class="columns is-multiline is-centered">
+        <div class="column is-half">
+          <figure class="image">
+            <img src="static/images/climate_finance_evolution.png" alt="Evolution of Climate Adaptation Flows">
+            <figcaption class="has-text-centered">Figure 1: Evolution of Climate Adaptation Flows</figcaption>
+          </figure>
+        </div>
+        <div class="column is-half">
+          <figure class="image">
+            <img src="static/images/Chaisemartin.jpg" alt="NAP Adoption Effects">
+            <figcaption class="has-text-centered">Figure 2: Effects of NAP Adoption on Adaptation Aid</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Policy Implications Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Policy Implications</h2>
+      <div class="content">
+        <p>
+          The study provides critical insights:
+        </p>
         <ul>
-            <li><strong>Donor Perception:</strong> NAP adoption signals self-sufficiency, leading donors to redirect funds to less-prepared nations.</li>
-            <li><strong>Reallocation of Funds:</strong> Some donors prioritize mitigation over adaptation, shifting funding away from NAP adopters.</li>
-            <li><strong>Administrative Barriers:</strong> Countries with NAPs may face bureaucratic challenges in accessing funds.</li>
+          <li><strong>For Recipient Countries:</strong> Strengthening institutional capacity and communicating clear adaptation strategies can enhance eligibility for increased funding.</li>
+          <li><strong>For Donors:</strong> Revising evaluation frameworks to capture both capacity improvements and shifts in vulnerability is essential for effective aid allocation.</li>
+          <li><strong>For Global Climate Finance:</strong> Coordinated donor strategies can mitigate the risks of aid reallocation and ensure sustained support for climate resilience initiatives.</li>
         </ul>
-        
-        <h1>Policy Implications</h1>
-        <p>Our findings highlight the need for a more strategic and targeted approach to adaptation finance. Instead of reducing aid after NAP adoption, donors should ensure that these plans lead to sustained financial support for long-term climate resilience.</p>
-        
-        <p>For further insights, read our full paper (available upon requests) on adaptation finance and NAP implementation.</p>
-</div>
-
-
-<!-- Youtube video -->
-
-<!-- End youtube video -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/Chaisemartin.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Effects of NAP adoption on received adaptation aid (De Chaisemartin and
-d’Haultfoeuille, 2024).
-        </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/ChinaRobust.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Effects of NAP adoption on received adaptation aid, China and India excluded
-(De Chaisemartin and d’Haultfoeuille, 2024)
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/SIDS.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Effects of NAP adoption on received adaptation aid, SIDS and LCDs countries subsample.
-(De Chaisemartin and d’Haultfoeuille, 2024)
-        </h2>
-      </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>
-        @unpublished{beaucoral2025,
-  title={No plan, No Aid? The effects of National Adaptation Plan implementation on received Adaptation Aid},
-  author={Beaucoral, Pierre and Goujon, Michael and Marchand, Sebastien},
-  year={2025}
-}  </code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
 
-
+  <!-- Footer Section -->
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          This research was conducted by Pierre Beaucoral, Michaël Goujon, and Sébastien Marchand. For more information, please visit our project page or contact us at <a href="mailto:pierre.beaucoral@uca.fr">pierre.beaucoral@uca.fr</a>.
+        </p>
+        <p>
+          Template inspired by the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> and licensed under the <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        </p>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="static/js/index.js"></script>
+</body>
+</html>
