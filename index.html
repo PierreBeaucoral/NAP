@@ -19,6 +19,7 @@
   <link rel="icon" type="image/x-icon" href="static/images/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 </head>
 <body>
@@ -54,8 +55,7 @@
       <h2 class="title is-3 has-text-centered">Abstract</h2>
       <div class="content">
         <p>
-          This paper examines the relationship between adaptation aid and the implementation of National Adaptation Plans (NAPs) using a staggered difference-in-differences framework enhanced by Double Machine Learning techniques. Our findings reveal that while conventional estimates suggested a decline in aid post-NAP adoption, advanced methods uncover a significant positive effect—indicating that NAPs can signal improved institutional capacity and attract additional funding.
-        </p>
+          This paper develops an integrated theoretical and empirical framework to examine the impact of National Adaptation Plan (NAP) adoption on adaptation finance flows, a key mechanism in global climate finance. In the theoretical approach, we build an innovative general equilibrium model that captures the dynamic interplay between recipient-side decision-making and donor strategic interactions. Our model delineates how NAP adoption simultaneously signals reduced vulnerability and enhanced institutional capacity, thereby affecting donor allocation decisions. Transitioning to the empirical analysis, we first apply a staggered difference-in-differences (DiD) approach to exploit both temporal and cross-country variations in adaptation aid. Recognizing the limitations of conventional methods in addressing high-dimensional confounders and the endogeneity of treatment, we further refine our estimation with a novel double machine learning (DML) technique. This approach leverages the Neyman-orthogonality property and cross-fitting to robustly control for model misspecification. While traditional DiD estimates initially suggested a counterintuitive decline in aid post-NAP adoption, our DML analysis reveals a significant positive effect—thereby reshaping our understanding of policy signals and donor behavior. These findings provide critical insights for policymakers and donors, suggesting that well-designed NAPs can effectively enhance a country’s capacity to attract adaptation finance.        </p>
       </div>
     </div>
   </section>
@@ -101,7 +101,7 @@
               <p>Policy Implications</p>
             </div>
             <div class="message-body">
-              Enhanced evaluation frameworks are needed to account for the dual signals sent by NAP adoption, promoting efficient climate finance allocation.
+              Enhanced evaluation frameworks are needed to capture both capacity improvements and shifts in vulnerability for efficient aid allocation.
             </div>
           </article>
         </div>
@@ -124,22 +124,24 @@
     </div>
   </section>
 
-  <!-- Visual Results Section -->
-  <section class="section has-background-light">
-    <div class="container">
-      <h2 class="title is-3 has-text-centered">Visualizing the Findings</h2>
-      <div class="columns is-multiline is-centered">
-        <div class="column is-half">
-          <figure class="image">
+  <!-- Visualization Carousel Section -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered">Visualizing the Findings</h2>
+        <div id="results-carousel" class="carousel">
+          <div class="item">
             <img src="static/images/climate_finance_evolution.png" alt="Evolution of Climate Adaptation Flows">
-            <figcaption class="has-text-centered">Figure 1: Evolution of Climate Adaptation Flows</figcaption>
-          </figure>
-        </div>
-        <div class="column is-half">
-          <figure class="image">
-            <img src="static/images/Chaisemartin.jpg" alt="NAP Adoption Effects">
-            <figcaption class="has-text-centered">Figure 2: Effects of NAP Adoption on Adaptation Aid</figcaption>
-          </figure>
+            <h2 class="subtitle has-text-centered">Evolution of Climate Adaptation Flows</h2>
+          </div>
+          <div class="item">
+            <img src="static/images/dynamic_double_ml_based_weighted_dCdH.png" alt="Effects of NAP Adoption">
+            <h2 class="subtitle has-text-centered">Effects of NAP Adoption on Adaptation Aid</h2>
+          </div>
+          <div class="item">
+            <img src="static/images/SIDS.jpg" alt="gate_income_academic.png">
+            <h2 class="subtitle has-text-centered">Heterogeneity Analysis by Region</h2>
+          </div>
         </div>
       </div>
     </div>
@@ -176,7 +178,22 @@
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script>
+    // Initialize the carousel (using bulma-carousel)
+    bulmaCarousel.attach('#results-carousel', {
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      autoplay: true,
+      pauseOnHover: false,
+      duration: 3000,
+      loop: true,
+      navigation: true,
+      pagination: true
+    });
+  </script>
 </body>
 </html>
