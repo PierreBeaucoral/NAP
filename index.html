@@ -49,65 +49,67 @@
     </div>
   </section>
 
-  <!-- Abstract Section -->
-  <section class="section">
-    <div class="container">
-      <h2 class="title is-3 has-text-centered">Abstract</h2>
-      <div class="content">
-        <p>
-          This paper develops an integrated theoretical and empirical framework to examine the impact of National Adaptation Plan (NAP) adoption on adaptation finance flows, a key mechanism in global climate finance. In the theoretical approach, we build an innovative general equilibrium model that captures the dynamic interplay between recipient-side decision-making and donor strategic interactions. Our model delineates how NAP adoption simultaneously signals reduced vulnerability and enhanced institutional capacity, thereby affecting donor allocation decisions. Transitioning to the empirical analysis, we first apply a staggered difference-in-differences (DiD) approach to exploit both temporal and cross-country variations in adaptation aid. Recognizing the limitations of conventional methods in addressing high-dimensional confounders and the endogeneity of treatment, we further refine our estimation with a novel double machine learning (DML) technique. This approach leverages the Neyman-orthogonality property and cross-fitting to robustly control for model misspecification. While traditional DiD estimates initially suggested a counterintuitive decline in aid post-NAP adoption, our DML analysis reveals a significant positive effect—thereby reshaping our understanding of policy signals and donor behavior. These findings provide critical insights for policymakers and donors, suggesting that well-designed NAPs can effectively enhance a country’s capacity to attract adaptation finance.        </p>
-      </div>
+<!-- Abstract Section -->
+<section class="section">
+  <div class="container">
+    <h2 class="title is-3 has-text-centered">Summary</h2>
+    <div class="content">
+      <p>
+        <strong>“No Plan, No Aid?”</strong> examines whether implementing a <strong>National Adaptation Plan (NAP)</strong> increases a country’s climate adaptation finance. Through a novel theoretical model and a robust <strong>Double Machine Learning (DML)</strong> approach, the authors find that NAP adoption does send mixed signals—reducing perceived vulnerability while boosting perceived capacity. Crucially, they find that while traditional econometric models show no impact or even a negative one, modern methods reveal a <strong>significant positive effect</strong> on adaptation aid.
+      </p>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Key Findings Section -->
-  <section class="section has-background-light">
-    <div class="container">
-      <h2 class="title is-3 has-text-centered">Key Findings</h2>
-      <div class="columns is-multiline">
-        <div class="column is-half">
-          <article class="message is-info">
-            <div class="message-header">
-              <p>Signal Effects</p>
-            </div>
-            <div class="message-body">
-              NAP adoption signals both reduced vulnerability and enhanced capacity, influencing donor decisions.
-            </div>
-          </article>
-        </div>
-        <div class="column is-half">
-          <article class="message is-info">
-            <div class="message-header">
-              <p>Empirical Insight</p>
-            </div>
-            <div class="message-body">
-              Traditional DiD models indicated a decline in aid; however, refined DML estimates show a robust positive impact.
-            </div>
-          </article>
-        </div>
-        <div class="column is-half">
-          <article class="message is-info">
-            <div class="message-header">
-              <p>Donor Behavior</p>
-            </div>
-            <div class="message-body">
-              Donors may reallocate aid to countries not adopting NAPs, emphasizing the importance of strategic communication.
-            </div>
-          </article>
-        </div>
-        <div class="column is-half">
-          <article class="message is-info">
-            <div class="message-header">
-              <p>Policy Implications</p>
-            </div>
-            <div class="message-body">
-              Enhanced evaluation frameworks are needed to capture both capacity improvements and shifts in vulnerability for efficient aid allocation.
-            </div>
-          </article>
-        </div>
+<section class="section has-background-light">
+  <div class="container">
+    <h2 class="title is-3 has-text-centered">Key Insights</h2>
+    <div class="columns is-multiline">
+      <div class="column is-half">
+        <article class="message is-info">
+          <div class="message-header">
+            <p>📊 Donor Strategy</p>
+          </div>
+          <div class="message-body">
+            Donors balance between rewarding vulnerability (Donor V) and rewarding institutional capacity (Donor C), shaping who gets aid post-NAP.
+          </div>
+        </article>
+      </div>
+      <div class="column is-half">
+        <article class="message is-info">
+          <div class="message-header">
+            <p>🤖 DML Advantage</p>
+          </div>
+          <div class="message-body">
+            Double Machine Learning reveals significant causal effects that traditional methods overlook due to confounding and endogeneity.
+          </div>
+        </article>
+      </div>
+      <div class="column is-half">
+        <article class="message is-info">
+          <div class="message-header">
+            <p>📈 Measurable Impact</p>
+          </div>
+          <div class="message-body">
+            DML ATE estimate: +56.75 million USD; IV-DML LATE: +311 million USD. Strong effects for “compliers” near NAP threshold.
+          </div>
+        </article>
+      </div>
+      <div class="column is-half">
+        <article class="message is-info">
+          <div class="message-header">
+            <p>🧭 Strategic Recommendation</p>
+          </div>
+          <div class="message-body">
+            NAP adoption is especially effective in low-revenue, low-trade, or low-GDP contexts. Prioritize capacity-building to unlock funding.
+          </div>
+        </article>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- Image carousel -->
 <section class="hero is-small">
@@ -140,64 +142,30 @@
 </div>
 </section>
 <!-- End image carousel -->
-  <!-- Detailed Results and Methodology Section -->
-  <section class="section">
-    <div class="container">
-      <h2 class="title is-3 has-text-centered">Research Results and Methodology</h2>
-      <div class="content">
-        <p>
-          Our analysis utilizes a staggered difference-in-differences approach to compare countries before and after NAP adoption, controlling for time-invariant and common factors. To address potential endogeneity and high-dimensional confounders, we employ a Double Machine Learning framework which leverages machine learning algorithms (e.g., LASSO, Gradient Boosting) to yield unbiased estimates.
-        </p>
-        <p>
-          The refined DML estimates reveal that NAP implementation is associated with a significant increase in adaptation aid, suggesting that the positive capacity signals outweigh the reduction in perceived vulnerability.
-        </p>
-      </div>
+<!-- Detailed Results and Methodology Section -->
+<section class="section">
+  <div class="container">
+    <h2 class="title is-3 has-text-centered">Methods & Results Summary</h2>
+    <div class="content">
+      <p>
+        The paper builds a game-theoretic model contrasting two donor types: <strong>Donor V (vulnerability-focused)</strong> and <strong>Donor C (capacity-focused)</strong>. Countries signal institutional capacity by adopting a NAP, but may lose aid from Donor V as they appear “less needy.”
+      </p>
+      <p>
+        Empirically, authors apply OLS, 2SLS (using latitude as an instrument), and <strong>Double Machine Learning (DML)</strong> to a dataset of 2,100 observations across 2013–2023.
+      </p>
+      <ul>
+        <li>📉 <strong>OLS:</strong> No significant NAP effect.</li>
+        <li>🧪 <strong>2SLS:</strong> Weakly positive effect (large std. error).</li>
+        <li>🤖 <strong>DML (ATE):</strong> +56.75 (p = 0.04)</li>
+        <li>🚀 <strong>IV-DML (LATE):</strong> +311.1 (p = 0.03)</li>
+      </ul>
+      <p>
+        Results reveal a <strong>hidden effectiveness</strong> of NAPs—detectable only when robust methods correct for nonlinearity and omitted variables.
+      </p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Visualization Carousel Section -->
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3 has-text-centered">Visualizing the Findings</h2>
-        <div id="results-carousel" class="carousel">
-          <div class="item">
-            <img src="static/images/climate_finance_evolution.png" alt="Evolution of Climate Adaptation Flows">
-            <h2 class="subtitle has-text-centered">Evolution of Climate Adaptation Flows</h2>
-          </div>
-          <div class="item">
-            <img src="static/images/dynamic_double_ml_based_weighted_dCdH.png" alt="Effects of NAP Adoption">
-            <h2 class="subtitle has-text-centered">Effects of NAP Adoption on Adaptation Aid (Double Machine Learning)</h2>
-          </div>
-           <div class="item">
-            <img src="static/images/Chaisemartin.png" alt="Effects of NAP Adoption">
-            <h2 class="subtitle has-text-centered">Effects of NAP Adoption on Adaptation Aid (Classic DiD approach)</h2>
-          </div>
-          <div class="item">
-            <img src="static/images/gate_income_academic.png" alt="gate_income_academic.png">
-            <h2 class="subtitle has-text-centered">Heterogeneity Analysis by Region</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Policy Implications Section -->
-  <section class="section">
-    <div class="container">
-      <h2 class="title is-3 has-text-centered">Policy Implications</h2>
-      <div class="content">
-        <p>
-          The study provides critical insights:
-        </p>
-        <ul>
-          <li><strong>For Recipient Countries:</strong> Strengthening institutional capacity and communicating clear adaptation strategies can enhance eligibility for increased funding.</li>
-          <li><strong>For Donors:</strong> Revising evaluation frameworks to capture both capacity improvements and shifts in vulnerability is essential for effective aid allocation.</li>
-          <li><strong>For Global Climate Finance:</strong> Coordinated donor strategies can mitigate the risks of aid reallocation and ensure sustained support for climate resilience initiatives.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
 
   <!-- Footer Section -->
   <footer class="footer">
