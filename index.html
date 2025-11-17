@@ -2,25 +2,26 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Development Climate Finance AI">
-  <meta property="og:title" content="No Plan, No Aid? - Research Communications"/>
-  <meta property="og:description" content="Exploring the impact of National Adaptation Plans on adaptation finance using advanced econometric methods."/>
+  <meta name="description" content="Do National Adaptation Plans (NAPs) attract more adaptation aid? A theoretical and staggered Difference-in-Differences analysis of climate finance.">
+  <meta property="og:title" content="No Plan, No Aid? - National Adaptation Plans and Adaptation Finance"/>
+  <meta property="og:description" content="Integrated theory and staggered DiD evidence on how National Adaptation Plans reshape adaptation finance allocations."/>
   <meta property="og:url" content="https://pierrebeaucoral.github.io/"/>
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image" content="static/images/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-  <meta name="twitter:title" content="No Plan, No Aid? - Research Communications">
-  <meta name="twitter:description" content="How National Adaptation Plans (NAPs) shape adaptation aid flows and policy implications.">
+  <meta name="twitter:title" content="No Plan, No Aid? - National Adaptation Plans and Adaptation Finance">
+  <meta name="twitter:description" content="How National Adaptation Plans (NAPs) change the level and share of adaptation aid using staggered Difference-in-Differences.">
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="keywords" content="AI, Development Finance, Climate Adaptation, National Adaptation Plans, Research">
+  <meta name="keywords" content="Climate Finance, Adaptation Aid, National Adaptation Plans, Staggered Difference-in-Differences, De Chaisemartin d’Haultfoeuille, Development Economics">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>No Plan, No Aid? - Research Communications</title>
+  <title>No Plan, No Aid? - National Adaptation Plans and Adaptation Finance</title>
   <link rel="icon" type="image/x-icon" href="static/images/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+  <script src="https://kit.fontawesome.com/a2e0e6ad65.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -29,12 +30,13 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <h1 class="title is-1">No Plan, No Aid?</h1>
-        <h2 class="subtitle is-3">Exploring the Impact of National Adaptation Plans on Adaptation Finance</h2>
+        <h2 class="subtitle is-3">National Adaptation Plans and the Allocation of Adaptation Finance</h2>
         <p class="is-size-5">By Pierre Beaucoral, Michaël Goujon, and Sébastien Marchand</p>
         <div class="buttons is-centered">
-          <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank" class="button is-light is-medium">
+          <!-- Adjust href to your actual PDF path if needed -->
+          <a href="static/pdfs/Climate_finance_and_NAP.pdf" target="_blank" class="button is-light is-medium">
             <span class="icon"><i class="fas fa-file-pdf"></i></span>
-            <span>Download Full Paper</span>
+            <span>Download Working Paper (PDF)</span>
           </a>
           <a href="static/pdfs/supplementary_material.pdf" target="_blank" class="button is-light is-medium">
             <span class="icon"><i class="fas fa-file-pdf"></i></span>
@@ -49,133 +51,201 @@
     </div>
   </section>
 
-<!-- Abstract Section -->
-<section class="section">
-  <div class="container">
-    <h2 class="title is-3 has-text-centered">Summary</h2>
-    <div class="content">
-      <p>
-        <strong>“No Plan, No Aid?”</strong> examines whether implementing a <strong>National Adaptation Plan (NAP)</strong> increases a country’s climate adaptation finance. Through a novel theoretical model and a robust <strong>Double Machine Learning (DML)</strong> approach, the authors find that NAP adoption does send mixed signals—reducing perceived vulnerability while boosting perceived capacity. Crucially, they find that while traditional econometric models show no impact or even a negative one, modern methods reveal a <strong>significant positive effect</strong> on adaptation aid.
-      </p>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Key Findings Section -->
-<section class="section has-background-light">
-  <div class="container">
-    <h2 class="title is-3 has-text-centered">Key Insights</h2>
-    <div class="columns is-multiline">
-      <div class="column is-half">
-        <article class="message is-info">
-          <div class="message-header">
-            <p>📊 Donor Strategy</p>
-          </div>
-          <div class="message-body">
-            Donors balance between rewarding vulnerability (Donor V) and rewarding institutional capacity (Donor C), shaping who gets aid post-NAP.
-          </div>
-        </article>
-      </div>
-      <div class="column is-half">
-        <article class="message is-info">
-          <div class="message-header">
-            <p>🤖 DML Advantage</p>
-          </div>
-          <div class="message-body">
-            Double Machine Learning reveals significant causal effects that traditional methods overlook due to confounding and endogeneity.
-          </div>
-        </article>
-      </div>
-      <div class="column is-half">
-        <article class="message is-info">
-          <div class="message-header">
-            <p>📈 Measurable Impact</p>
-          </div>
-          <div class="message-body">
-            DML ATE estimate: +56.75 million USD; IV-DML LATE: +311 million USD. Strong effects for “compliers” near NAP threshold.
-          </div>
-        </article>
-      </div>
-      <div class="column is-half">
-        <article class="message is-info">
-          <div class="message-header">
-            <p>🧭 Strategic Recommendation</p>
-          </div>
-          <div class="message-body">
-            NAP adoption is especially effective in low-revenue, low-trade, or low-GDP contexts. Prioritize capacity-building to unlock funding.
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
+  <!-- Abstract / Summary Section -->
+  <section class="section">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-      <div class="item">
-        <!-- Your image here -->
-         <img src="static/images/nap_status_map.png" alt="NAP adoption across countries"/>
-         <h2 class="subtitle has-text-centered">
-           National Adaptation Plans Adoptions.
-         </h2>
-       </div>
-        <!-- Your image here -->
-        <div class="item">
-         <img src="static/images/recipient_map.png" alt="Sum of commitments per country"/>
-         <h2 class="subtitle has-text-centered">
-           Commitments per country on the period
-         </h2>
-       </div>
-        <!-- Your image here -->
-        <div class="item">
-         <img src="static/images/top_donors.png" alt="Top donor for adaptation"/>
-         <h2 class="subtitle has-text-centered">
-           Top donors on the period
-         </h2>
-       </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-<!-- Detailed Results and Methodology Section -->
-<section class="section">
-  <div class="container">
-    <h2 class="title is-3 has-text-centered">Methods & Results Summary</h2>
-    <div class="content">
-      <p>
-        The paper builds a game-theoretic model contrasting two donor types: <strong>Donor V (vulnerability-focused)</strong> and <strong>Donor C (capacity-focused)</strong>. Countries signal institutional capacity by adopting a NAP, but may lose aid from Donor V as they appear “less needy.”
-      </p>
-      <p>
-        Empirically, authors apply OLS, 2SLS (using latitude as an instrument), and <strong>Double Machine Learning (DML)</strong> to a dataset of 2,100 observations across 2013–2023.
-      </p>
-      <ul>
-        <li>📉 <strong>OLS:</strong> No significant NAP effect.</li>
-        <li>🧪 <strong>2SLS:</strong> Weakly positive effect (large std. error).</li>
-        <li>🤖 <strong>DML (ATE):</strong> +56.75 (p = 0.04)</li>
-        <li>🚀 <strong>IV-DML (LATE):</strong> +311.1 (p = 0.03)</li>
-      </ul>
-      <p>
-        Results reveal a <strong>hidden effectiveness</strong> of NAPs—detectable only when robust methods correct for nonlinearity and omitted variables.
-      </p>
+      <h2 class="title is-3 has-text-centered">Summary</h2>
+      <div class="content">
+        <p>
+          <strong>“No Plan, No Aid?”</strong> develops an integrated theoretical and empirical framework to assess whether
+          adopting a <strong>National Adaptation Plan (NAP)</strong> increases a country’s <strong>received adaptation finance</strong>. In the model,
+          NAPs simultaneously signal <strong>higher institutional capacity</strong> and potentially <strong>lower vulnerability</strong>, affecting how
+          donors allocate their envelopes across countries and between climate and non-climate activities.
+        </p>
+        <p>
+          Empirically, the paper exploits the <strong>staggered timing of NAP adoption</strong> and applies the
+          <strong>de Chaisemartin &amp; d’Haultfoeuille (2023)</strong> estimator to a panel of developing countries from
+          <strong>2013–2023</strong>, using <strong>OECD CRS</strong> commitments tagged with adaptation Rio markers. The event-study results show
+          that NAP adoption is followed by a <strong>large and sustained increase in adaptation commitments</strong>, with no
+          comparable change in total or non-adaptation aid. When focusing on a country’s <strong>share of global adaptation
+          finance</strong>, NAP adopters gain about <strong>2.8 percentage points on average</strong>, and up to <strong>4–4.5 points five years
+          after adoption</strong>. Donor heterogeneity analyses reveal that these gains are driven mainly by <strong>DAC bilateral</strong>
+          and <strong>multilateral donors</strong>, and particularly by <strong>capacity-oriented donors</strong>.
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Key Insights Section -->
+  <section class="section has-background-light">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Key Insights</h2>
+      <div class="columns is-multiline">
+        <div class="column is-half">
+          <article class="message is-info">
+            <div class="message-header">
+              <p>🧩 NAPs as Signals</p>
+            </div>
+            <div class="message-body">
+              The theoretical model shows how NAPs raise <strong>effective capacity</strong>, shifting donors’ portfolios toward
+              adaptation within a CES framework over <strong>climate vs. other aid</strong> and across recipient countries.
+            </div>
+          </article>
+        </div>
+        <div class="column is-half">
+          <article class="message is-info">
+            <div class="message-header">
+              <p>📐 Credible Causal Design</p>
+            </div>
+            <div class="message-body">
+              A <strong>staggered Difference-in-Differences</strong> design using the <strong>de Chaisemartin–d’Haultfoeuille</strong> estimator
+              delivers dynamic treatment effects with <strong>clean pre-trends</strong> and placebo checks.
+            </div>
+          </article>
+        </div>
+        <div class="column is-half">
+          <article class="message is-info">
+            <div class="message-header">
+              <p>💰 How Much More Adaptation Aid?</p>
+            </div>
+            <div class="message-body">
+              Baseline estimates suggest that NAP adoption is associated with roughly a <strong>doubling of adaptation
+              commitments</strong> (around <strong>0.77 log points</strong> on average) and a gain of about <strong>2.8 percentage points</strong> in a
+              country’s <strong>share of global adaptation finance</strong>, rising to <strong>4–4.5 points</strong> five years after adoption.
+            </div>
+          </article>
+        </div>
+        <div class="column is-half">
+          <article class="message is-info">
+            <div class="message-header">
+              <p>🌍 Who Actually Pays More?</p>
+            </div>
+            <div class="message-body">
+              The response is driven by <strong>DAC bilateral donors</strong> and <strong>multilateral institutions</strong>. <strong>Capacity-oriented
+              donors</strong> sharply increase adaptation support after NAP adoption, while <strong>vulnerability-oriented donors</strong>
+              show muted or null responses.
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <!-- FIGURE 1: NAP adoption map -->
+          <div class="item">
+            <img src="static/images/nap_status_map.png" alt="Global map of National Adaptation Plan adoption status"/>
+            <h2 class="subtitle has-text-centered">
+              Adoption of National Adaptation Plans (late 2024).
+            </h2>
+          </div>
+
+          <!-- FIGURE 2: Baseline DiD event study -->
+          <div class="item">
+            <img src="static/images/Chaisemartin_main.jpg" alt="Event-study estimates of NAP adoption on adaptation aid commitments"/>
+            <h2 class="subtitle has-text-centered">
+              Dynamic effect of NAP adoption on adaptation commitments (staggered DiD).
+            </h2>
+          </div>
+
+          <!-- FIGURE 3: Share of global adaptation finance -->
+          <div class="item">
+            <img src="static/images/Chaisemartin_share.jpg" alt="Effect of NAP adoption on share of global adaptation aid received"/>
+            <h2 class="subtitle has-text-centered">
+              NAP adopters’ share of global adaptation finance rises by 2.8–4.5 percentage points.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+  <!-- Detailed Results and Methodology Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Methods &amp; Results Summary</h2>
+      <div class="content">
+        <p>
+          On the <strong>theory side</strong>, the paper embeds NAPs in a <strong>Recipient–Donor allocation model</strong>. Donors allocate an
+          overall budget <em>B</em> across countries and between <strong>climate (adaptation) aid</strong> and <strong>other aid</strong> using CES
+          aggregators. A NAP indicator raises a country’s <strong>effective capacity</strong>, which in turn shifts the optimal
+          climate share and the country’s envelope. The model generates clear, testable predictions:
+        </p>
+        <ul>
+          <li><strong>Composition channel:</strong> NAPs increase the <strong>adaptation share</strong> of a country’s envelope.</li>
+          <li><strong>Scale channel:</strong> total aid envelopes may rise modestly, but need not change much.</li>
+          <li><strong>Cross-recipient reallocation:</strong> NAP adopters should capture a <strong>larger share of global adaptation finance</strong>.</li>
+        </ul>
+
+        <p>
+          On the <strong>empirical side</strong>, the paper combines:
+        </p>
+        <ul>
+          <li><strong>Adaptation finance data:</strong> OECD <strong>Creditor Reporting System</strong> (CRS) project-level commitments tagged with
+          <strong>Rio markers 1 &amp; 2 for adaptation</strong>, restricted to ODA-eligible developing countries.</li>
+          <li><strong>NAP adoption data:</strong> NAP submission and timing from the <strong>UNFCCC NAP Central</strong> tracking tool.</li>
+          <li><strong>Controls:</strong> GDP (WDI) and institutional quality (<strong>CPIA efficiency of revenue mobilisation</strong>), plus
+          recipient and year fixed effects.</li>
+          <li><strong>Estimation:</strong> a <strong>staggered Difference-in-Differences event study</strong> using the <strong>de Chaisemartin &amp;
+          d’Haultfoeuille (2023)</strong> estimator, focusing on 2013–2023 to ensure a three-year pre-treatment window.</li>
+        </ul>
+
+        <p>
+          <strong>Baseline results.</strong> Dynamic estimates show that adaptation commitments <strong>rise strongly after NAP adoption</strong>.
+          One year after adoption, commitments increase by about <strong>0.75 log points</strong>, remaining sizeable in later years, with
+          an average post-treatment effect of roughly <strong>0.77 log points</strong> (around a <strong>doubling</strong> of adaptation commitments).
+          Pre-treatment leads are small and statistically insignificant, and a placebo test that shifts treatment two
+          years earlier yields null effects.
+        </p>
+
+        <p>
+          <strong>Shares vs. levels.</strong> When the outcome is the <strong>share of total global adaptation finance</strong> received by a
+          country in a given year, NAP adoption increases this share by about <strong>2.8 percentage points on average</strong>, and up
+          to <strong>4–4.5 percentage points</strong> five years after adoption. In contrast, <strong>total aid</strong> and <strong>non-adaptation aid</strong>
+          remain largely unchanged, pointing to a strong <strong>composition effect toward adaptation</strong> rather than an expansion of
+          overall envelopes.
+        </p>
+
+        <p>
+          <strong>Donor heterogeneity.</strong> Estimating the dynamic effects by donor type shows that the response is driven by
+          <strong>DAC members</strong> and <strong>multilateral donors</strong>, while non-DAC and private donors exhibit negligible changes.
+          A further split by <strong>donor orientation</strong>—capacity- vs. vulnerability-oriented—confirms the theoretical mechanism:
+          <strong>capacity-oriented donors</strong> increase adaptation finance after NAP adoption, whereas <strong>vulnerability-oriented donors</strong>
+          do not respond systematically.
+        </p>
+
+        <p>
+          Overall, the evidence supports the headline message of the paper: <strong>NAPs “pay off” mainly by reshaping the
+          composition and cross-country allocation of adaptation finance</strong>, rather than by dramatically expanding total
+          development finance.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer Section -->
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
         <p>
-          This research was conducted by Pierre Beaucoral, Michaël Goujon, and Sébastien Marchand. For more information, please visit our project page or contact us at <a href="mailto:pierre.beaucoral@uca.fr">pierre.beaucoral@uca.fr</a>.
+          This research was conducted by Pierre Beaucoral, Michaël Goujon, and Sébastien Marchand.
+          For more information, please visit our project page or contact us at
+          <a href="mailto:pierre.beaucoral@uca.fr">pierre.beaucoral@uca.fr</a>.
         </p>
         <p>
-          Template inspired by the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> and licensed under the <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          Template inspired by the
+          <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">
+            Academic Project Page Template
+          </a>
+          and licensed under the
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+            Creative Commons Attribution-ShareAlike 4.0 International License
+          </a>.
         </p>
       </div>
     </div>
